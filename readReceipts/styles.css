@@ -1,0 +1,56 @@
+/* Instagram-style read receipt shown under your last message. */
+.vc-rr-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 6px;
+    margin: 2px 0 4px;
+    padding-right: 2px;
+    font-size: 11px;
+    line-height: 14px;
+    user-select: none;
+}
+
+.vc-rr-seen .vc-rr-text {
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
+.vc-rr-sent .vc-rr-text {
+    color: var(--text-muted);
+    opacity: 0.7;
+}
+
+.vc-rr-time {
+    color: var(--text-muted);
+    opacity: 0.7;
+    font-size: 10px;
+}
+
+.vc-rr-avatar {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Server "Seen by N" avatar stack */
+.vc-rr-avatars {
+    display: inline-flex;
+    align-items: center;
+}
+
+.vc-rr-avatars .vc-rr-avatar {
+    margin-left: -5px;
+    box-shadow: 0 0 0 2px var(--background-primary);
+}
+
+.vc-rr-avatars .vc-rr-avatar:first-child {
+    margin-left: 0;
+}
+
+.vc-rr-more {
+    margin-left: 4px;
+    font-size: 10px;
+    color: var(--text-muted);
+}
